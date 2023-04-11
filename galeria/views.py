@@ -1,11 +1,12 @@
 from galeria.models import Fotografia
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
+
 
 
 
 def index(request):
-    fotografias = Fotografia.objects.all()#objtos detro do nosso model
+    fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True)#objtos detro do nosso model
+    
     return render(request, 'galeria/index.html', {"cards": fotografias})
 
 def imagem(request, foto_id):
