@@ -1,3 +1,11 @@
+
+# Alura Espace
+
+Site onde é possível adicionar, listar, editar e excluir fotos do espaço.
+
+
+
+
 ####
 #sequencia de comandos
 python manage.py collectstatic
