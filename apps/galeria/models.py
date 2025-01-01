@@ -8,6 +8,7 @@ class Fotografia(models.Model):
         ("ESTRELA", "Estrela"),
         ("GALÁXIA", "Galáxia"),
         ("PLANETA", "Planeta"),
+        ("BURACO NEGRO", "Buraco Negro")
     ]              #nignfica vazia
     nome = models.CharField(max_length=100, null=False, blank=False)#vai aceitar caractere
     legenda = models.CharField(max_length=150, null=False, blank=False)
