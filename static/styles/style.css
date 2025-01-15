@@ -193,7 +193,6 @@ table {
     display: flex;
     width: 100%;
 }
-
 .imagem {
     display: flex;
     justify-content: center;
@@ -209,7 +208,12 @@ table {
 }
 
 .imagem__imagem {
-    width: 100%;
+    width: 950px;
+    /* Largura fixa */
+    height: 500px;
+    /* Altura fixa */
+    object-fit: cover;
+    /* Garante que a imagem preencha o espaço sem distorção */
     border-radius: 20px;
 }
 
